@@ -1,0 +1,24 @@
+{
+  "states": [
+    "CameraSecreta", "Bucatarie", "Coridor", "Biblioteca", "Intrare", "Iesire"
+  ],
+  "sigma": [
+    "0", "1", "2", "3"
+  ],
+  "routes": [
+    {"inc": "CameraSecreta", "state": "1", "fin": "Coridor"},
+    {"inc": "Bucatarie", "state": "2", "fin": "Coridor"},
+    {"inc": "Coridor", "state": "2", "fin": "Biblioteca"},
+    {"inc": "Coridor", "state": "3", "fin": "Bucatarie"},
+    {"inc": "Biblioteca", "state": "1", "fin": "Iesire"},
+    {"inc": "Biblioteca", "state": "3", "fin": "Coridor"},
+    {"inc": "Intrare", "state": "0", "fin": "Coridor"},
+    {"inc": "Iesire", "state": "0", "fin": "Biblioteca"}
+  ],
+  "start": [
+    "Intrare"
+  ],
+  "final": [
+    "Iesire"
+  ]
+}

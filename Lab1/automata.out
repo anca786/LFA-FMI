@@ -1,0 +1,7 @@
+Starea initiala este:q0
+Starea finala este:q1
+Alfabetul este:[['0'], ['1'], ['2'], ['3']]
+q0,q1,0
+q0,q1,1
+q1,q0,0
+q1,q0,1

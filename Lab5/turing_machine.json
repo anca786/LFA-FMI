@@ -1,0 +1,27 @@
+{
+  "stare_initiala": "q0",
+  "simbol_gol": "_",
+  "stari_finale": ["q_final", "q_sfarsit","q2"],
+  "tranzitii": {
+    "q0": {
+      "1": ["q1", "X", "D"],
+      "0": ["q2", "0", "D"],
+      "_": ["q_sfarsit", "_", "S"]
+    },
+    "q1": {
+      "1": ["q1", "1", "D"],
+      "0": ["q1", "0", "D"],
+      "_": ["q_copiaza", "1", "S"]
+    },
+    "q_copiaza": {
+      "1": ["q_copiaza", "1", "S"],
+      "0": ["q_copiaza", "0", "S"],
+      "X": ["q0", "X", "D"]
+    },
+    "q2": {
+      "X": ["q2", "1", "D"],
+      "0": ["q_final", "0", "D"],
+      "_": ["q_final", "_", "D"]
+    }
+  }
+}
